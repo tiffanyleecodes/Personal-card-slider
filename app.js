@@ -15,7 +15,7 @@ function showSlides(n) {
 
   let width = screen.width;
 
-  if (width >= 800) {
+  if (width >= 768) {
     if (n + 2 > slides.length) {
       slideIndex = 1;
     }
