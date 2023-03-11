@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  color: #1d252a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #0297db;
+}
+
+.wrap {
+  width: 1000px;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 0;
+}
+
+button img {
+  width: 40%;
+  opacity: 0.5;
+}
+
+button {
+  width: 5%;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.nextBtn {
+  right: 0;
+}
+
+.preBtn {
+  left: 0;
+}
+.card {
+  background-color: #e6e6e640;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 22rem;
+  margin: 0 0.6rem;
+  height: 28rem;
+
+  position: relative;
+  box-shadow: 0 5px 5px #29353c;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.profilePic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.6s;
+  background-color: rgb(241, 237, 237);
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.profilePic img {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.card:hover .profilePic {
+  left: 35%;
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50px;
+  top: 1rem;
+}
+.card:hover .title {
+  position: absolute;
+  top: 7.5rem;
+}
+
+.title {
+  position: absolute;
+  top: 24rem;
+  left: auto;
+  margin: 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title img {
+  width: 10%;
+  object-fit: contain;
+}
+hr {
+  width: 100%;
+  border: 1px solid rgba(241, 237, 237, 0.6);
+  margin: 10.5rem 0 1rem 0;
+}
+
+.ranking {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p {
+  margin: 0.4rem 0;
+}
+
+a {
+  margin: 0.5rem 0;
+}
+a:hover {
+  cursor: pointer;
+  color: #d7dde1;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 1rem 2rem;
+  }
+
+  .slide {
+    overflow: hidden;
+  }
+
+  .card {
+    width: 18rem;
+    height: 25em;
+  }
+
+  .title {
+    top: 21rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  a {
+    font-size: 0.8rem;
+  }
+
+  .ranking {
+    font-size: 1.1rem;
+  }
+
+  hr {
+    margin: 10rem 0 1rem 0;
+  }
+
+  button {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    cursor: pointer;
+  }
+}
