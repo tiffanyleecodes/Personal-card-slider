@@ -29,7 +29,7 @@ function showSlides(n) {
     slides[slideIndex + 1].style.display = "block";
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex].style.display = "block";
-  } else if (width < 800 && width >= 430) {
+  } else if (width < 768 && width >= 430) {
     if (n + 1 > slides.length) {
       slideIndex = 1;
     }
